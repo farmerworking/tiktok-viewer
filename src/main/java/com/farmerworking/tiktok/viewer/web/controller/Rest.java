@@ -1,4 +1,4 @@
-package com.farmerworking.tiktok.viewer.web;
+package com.farmerworking.tiktok.viewer.web.controller;
 
 import com.farmerworking.tiktok.viewer.api.pojo.UserInfo;
 import org.springframework.web.bind.annotation.RequestMapping;

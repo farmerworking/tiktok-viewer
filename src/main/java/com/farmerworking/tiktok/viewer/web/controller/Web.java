@@ -1,4 +1,4 @@
-package com.farmerworking.tiktok.viewer.web;
+package com.farmerworking.tiktok.viewer.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
