@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Rest {
-    @RequestMapping("/")
-    UserInfo hello() {
+    @RequestMapping("/api/user")
+    UserInfo user() {
         UserInfo info = new UserInfo();
         info.follower_count = 1;
         info.nickname = "trump";
