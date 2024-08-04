@@ -18,4 +18,9 @@ public class Web {
 
         return "example"; //view
     }
+
+    @GetMapping("/index")
+    public String index(Model model) {
+        return "index";
+    }
 }
