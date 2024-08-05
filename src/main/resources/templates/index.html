@@ -34,6 +34,15 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="px-4 py-5 my-5 text-center">
+        <ol>
+            <li th:each="user: ${users}" th:text="${user.nickname} + ', ' + ${user.follower_count} + ', ' + ${user.unique_id} + ', ' + ${user.avatar_300x300.url_list[0]}">
+            </li>
+        </ol>
+    </div>
+</div>
+
 <footer class="footer fixed-bottom">
     <div class="container">
         <footer class="py-3">
