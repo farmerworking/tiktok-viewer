@@ -19,7 +19,7 @@
 </div>
 
 <div class="container">
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 mt-5 text-center">
         <h1 class="display-1 fw-bold text-body-emphasis mb-4">View Tiktok anonymously</h1>
         <div class="col-lg-6 mx-auto">
             <form action="/">
@@ -35,11 +35,15 @@
 </div>
 
 <div class="container">
-    <div class="px-4 py-5 my-5 text-center">
-        <ol>
-            <li th:each="user: ${users}" th:text="${user.nickname} + ', ' + ${user.follower_count} + ', ' + ${user.unique_id} + ', ' + ${user.avatar_300x300.url_list[0]}">
-            </li>
-        </ol>
+    <div class="px-4 text-center">
+        <div class="container card mb-4" style="width: 20rem;" th:each="user: ${users}">
+            <img class="card-img-top mt-3" th:src="${user.avatar_300x300.url_list[0]}" />
+            <div class="card-body">
+                <h5 class="card-title" th:text="'@' + ${user.unique_id}"></h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary" th:text="${user.getHumanReadableFollowerCount()} + ' followers'"></h6>
+                <p class="card-text" th:text="${user.nickname}"></p>
+            </div>
+        </div>
     </div>
 </div>
 
