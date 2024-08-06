@@ -9,16 +9,14 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img th:src="@{/img/logo-64.png}" class="rounded me-2" alt="logo.png" />
-            <span class="logo__title fw-bold text-body-emphasis">TiktokViewer</span>
-        </a>
-    </header>
-</div>
+<header class="container d-flex flex-wrap justify-content-center py-3">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img th:src="@{/img/logo-64.png}" class="rounded me-2" alt="logo.png" />
+        <span class="logo__title fw-bold text-body-emphasis">TiktokViewer</span>
+    </a>
+</header>
 
-<div class="container">
+<content class="container">
     <div class="px-4 py-5 mt-5 text-center">
         <h1 class="display-1 fw-bold text-body-emphasis mb-4">View Tiktok anonymously</h1>
         <div class="col-lg-6 mx-auto">
@@ -32,9 +30,7 @@
             </form>
         </div>
     </div>
-</div>
 
-<div class="container">
     <div class="px-4 text-center">
         <div class="container card mb-4" style="width: 20rem;" th:each="user: ${users}">
             <img class="card-img-top mt-3" th:src="${user.avatar_300x300.url_list[0]}" />
@@ -45,7 +41,7 @@
             </div>
         </div>
     </div>
-</div>
+</content>
 
 <footer class="mt-auto">
     <div class="container">
