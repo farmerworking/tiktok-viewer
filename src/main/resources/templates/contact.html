@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div th:replace="template :: head"></div>
+
+<body class="d-flex flex-column min-vh-100">
+
+<div th:replace="template :: header"></div>
+
+<content class="container">
+    <div class="card mt-5 mb-3">
+        <div class="card-header">
+            <h1 class="contact-us-header">Contact Us</h1>
+        </div>
+        <div class="card-body">
+            <p class="mt-2">Please send email if you have any questions about our site, and we will be happy to help you with your questions.</p>
+            <p> Our email: farmerworking2023@gmail.com </p>
+        </div>
+    </div>
+</content>
+
+<div th:replace="template :: footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
